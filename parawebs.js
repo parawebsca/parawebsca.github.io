@@ -31,3 +31,4 @@ fpixel.setAttribute('src', 'http://ads.parawebs.com/expo2015.jpg');
 fpixel.setAttribute('alt', 'ExpoTachira 2015');
 fa.appendChild(fpixel);
 document.getElementById('parawebs').appendChild(fa);
+
