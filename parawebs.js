@@ -8,12 +8,14 @@
    s.parentNode.insertBefore(fbds, s);
    _fbq.loaded = true;
  }
+ _fbq.push(['addPixelId', '459761667496533']);
 })();
 window._fbq = window._fbq || [];
-window._fbq.push(['track', '459761667496533', {'value':'0.00','currency':'USD'}]);
+window._fbq.push(['track', 'PixelInitialized', {}]);
+
 var noscript =document.createElement("noscript");
 var pixel=document.createElement("img");
-pixel.setAttribute('src', 'https://www.facebook.com/tr?ev=459761667496533&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1');
+pixel.setAttribute('src', 'https://www.facebook.com/tr?id=459761667496533&amp;ev=PixelInitialized');
 pixel.setAttribute('alt', 'na');
 pixel.setAttribute('height', '1px');
 pixel.setAttribute('width', '1px');
