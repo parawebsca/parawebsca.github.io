@@ -32,3 +32,29 @@ fpixel.setAttribute('alt', 'ExpoTachira 2015');
 fa.appendChild(fpixel);
 document.getElementById('parawebs').appendChild(fa);
 
+var google_conversion_id = 963564755;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+
+var gscript =document.createElement("script");
+gscript.setAttribute('src', '//www.googleadservices.com/pagead/conversion.js');
+gscript.setAttribute('type', 'text/javascript');
+document.getElementById('parawebs').appendChild(gscript);
+
+
+
+var gnoscript =document.createElement("noscript");
+var gpixel=document.createElement("img");
+var gdivpixel =document.createElement("div");
+
+gpixel.setAttribute('src', '//googleads.g.doubleclick.net/pagead/viewthroughconversion/963564755/?value=0&amp;guid=ON&amp;script=0');
+gpixel.setAttribute('alt', 'na');
+gpixel.setAttribute('height', '1px');
+gpixel.setAttribute('width', '1px');
+gpixel.setAttribute('style', 'display:none');
+gnoscript.appendChild(pixel);
+gdivpixel.appendChild(noscript);
+gdivpixel.setAttribute('display', 'inline');
+document.getElementById('parawebs').appendChild(gdivpixel);
+
+
