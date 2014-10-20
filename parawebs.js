@@ -24,7 +24,7 @@ noscript.appendChild(pixel);
 document.getElementById('parawebs').appendChild(noscript);
 
 var fa=document.createElement("a");
-fa.setAttribute('href','http://expotachira.net');
+fa.setAttribute('href','http://goo.gl/zjAPBh');
 fa.setAttribute('target','_blanks');
 var fpixel=document.createElement("img");
 fpixel.setAttribute('src', 'http://ads.parawebs.com/expo2015.jpg');
