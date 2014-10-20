@@ -54,7 +54,7 @@ gpixel.setAttribute('width', '1px');
 gpixel.setAttribute('style', 'display:none');
 gnoscript.appendChild(pixel);
 gdivpixel.appendChild(noscript);
-gdivpixel.setAttribute('display', 'inline');
+gdivpixel.setAttribute('display', 'none');
 document.getElementById('parawebs').appendChild(gdivpixel);
 
 
