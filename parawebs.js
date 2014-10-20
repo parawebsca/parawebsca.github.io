@@ -58,4 +58,3 @@ gdivpixel.setAttribute('display', 'none');
 document.getElementById('parawebs').appendChild(gdivpixel);
 
 
-var list = document.getElementsByClassName("widget-ad")[0].setAttribute("hola","kease?");
