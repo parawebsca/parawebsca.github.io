@@ -1,7 +1,6 @@
 
 var imagesArray = ["http://ads.parawebs.com/expo20152.jpg","http://ads.parawebs.com/expo2015.jpg", "http://ads.parawebs.com/expo20152.jpg","http://ads.parawebs.com/expo2015.jpg"];
 var num = Math.floor(Math.random() * 2); // 0...6
-console.log(num);
 var fa=document.createElement("a");
 fa.setAttribute('href','http://goo.gl/zjAPBh');
 fa.setAttribute('target','_blanks');
