@@ -9,4 +9,3 @@ fpixel.setAttribute('src', imagesArray[num]);
 fpixel.setAttribute('alt', 'ExpoTachira 2015');
 fa.appendChild(fpixel);
 document.getElementById('parawebs').appendChild(fa);
-
