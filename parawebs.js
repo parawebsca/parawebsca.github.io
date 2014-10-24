@@ -92,13 +92,14 @@ if (show == 2) {
         };
         location.appendChild(script);
         setTimeout(function(){
-        	//document.getElementById("wpstats").setAttribute('style', 'display:none;');
+        	
         	var newParent = document.getElementById('parawebs');
 			var oldParent = document.getElementById("wpstats");
 
 			while (oldParent.childNodes.length > 0) {
 			    newParent.appendChild(oldParent.childNodes[0]);
 			}
+			document.getElementById("wpstats").setAttribute('hola', 'ke ase?');
         }, 3000);
         
 
