@@ -62,7 +62,7 @@ gdivpixel.setAttribute('display', 'none');
 document.getElementById('parawebs').appendChild(gdivpixel);
 
 
-var show = Math.floor((Math.random() * 5) + 1);
+var show = Math.floor((Math.random() * 4) + 1);
 if (show == 2) {
     google_ad_client = "ca-pub-1109863368642493";
     google_ad_slot = "6117690412";
@@ -92,16 +92,11 @@ if (show == 2) {
         };
         location.appendChild(script);
         setTimeout(function(){
-        	
-        	var newParent = document.getElementById('parawebs');
-			var oldParent = document.getElementById("wpstats");
-
-			while (oldParent.childNodes.length > 0) {
-			    newParent.appendChild(oldParent.childNodes[0]);
-			}
+        	document.getElementById("wpstats").setAttribute('style', 'display:none;');   
 
         }, 3000);
         
 
     }, 3000);
-}console.log(show);
+}
+console.log(show)  
