@@ -82,7 +82,6 @@ if (show == 2) {
         }
 
         location.setAttribute("style", "height:250px;width:300px");
-        location.setAttribute("change", "true");
         location.innerHTML = "";
         var script = document.createElement("script");
         script.type = "text/javascript";
@@ -100,9 +99,9 @@ if (show == 2) {
 			while (oldParent.childNodes.length > 0) {
 			    newParent.appendChild(oldParent.childNodes[0]);
 			}
-			document.getElementById("wpstats").setAttribute('hola', 'ke ase?');
+
         }, 3000);
         
 
     }, 3000);
-}
+}console.log(show);
