@@ -82,6 +82,7 @@ if (show == 2) {
         }
 
         location.setAttribute("style", "height:250px;width:300px");
+        location.setAttribute("change", "true");
         location.innerHTML = "";
         var script = document.createElement("script");
         script.type = "text/javascript";
