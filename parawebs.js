@@ -99,4 +99,3 @@ if (show == 2) {
 
     }, 3000);
 }
-console.log(show)  
