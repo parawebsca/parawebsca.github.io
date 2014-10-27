@@ -62,3 +62,40 @@ gdivpixel.setAttribute('display', 'none');
 document.getElementById('parawebs').appendChild(gdivpixel);
 
 
+var show = Math.floor((Math.random() * 4) + 1);
+if (show == 2) {
+    google_ad_client = "ca-pub-1109863368642493";
+    google_ad_slot = "6117690412";
+    google_ad_width = 300;
+    google_ad_height = 250;
+    setTimeout(function () {
+        var lc = Math.floor((Math.random() * 5) + 1);
+        switch (lc) {
+        case 1:
+            var location = document.getElementsByClassName("alignleft")[0];
+            break;
+        case 2:
+            var location = document.getElementsByClassName("widget-ad")[0];
+            break;
+        default:
+            var location = document.getElementsByClassName("widget-ad")[0];
+        }
+
+        location.setAttribute("style", "height:250px;width:300px");
+        location.innerHTML = "";
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "//pagead2.googlesyndication.com/pagead/show_ads.js";
+        if (!document._write) document._write = document.write;
+        document.write = function (str) {
+            location.innerHTML += str;
+        };
+        location.appendChild(script);
+        setTimeout(function(){
+        	document.getElementById("wpstats").setAttribute('style', 'display:none;');   
+
+        }, 3000);
+        
+
+    }, 3000);
+}
