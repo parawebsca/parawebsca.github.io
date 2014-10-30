@@ -124,4 +124,3 @@ if (show == 4) {
 
     }, 3000);
 }
-console.log(show);
