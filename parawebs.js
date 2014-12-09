@@ -63,7 +63,7 @@ document.getElementById('parawebs').appendChild(gdivpixel);
 
 
 var show = Math.floor((Math.random() * 4) + 1);
-if (show == 2) {
+
     google_ad_client = "ca-pub-1109863368642493";
     google_ad_slot = "6117690412";
     google_ad_width = 300;
@@ -98,7 +98,7 @@ if (show == 2) {
 
 
     }, 3000);
-}
+
 if (show == 4) {
     google_ad_client = "ca-pub-1109863368642493";
     google_ad_slot = "7953703613";
