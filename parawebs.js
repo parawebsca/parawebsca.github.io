@@ -81,17 +81,17 @@ var show = Math.floor((Math.random() * 4) + 1);
             var placesrc = document.getElementsByClassName("widget-ad")[0];
         } */
       	var placesrc = document.getElementsByClassName("widget-ad")[0];
-		console.log(placesrc);
-        placesrc.setAttribute("style", "height:250px;width:300px");
-        placesrc.innerHTML = "";
+		console.log(document.getElementsByClassName("widget-ad")[0]);
+        document.getElementsByClassName("widget-ad")[0].setAttribute("style", "height:250px;width:300px");
+        document.getElementsByClassName("widget-ad")[0].innerHTML = "";
         var script = document.createElement("script");
         script.type = "text/javascript";
         script.src = "//pagead2.googlesyndication.com/pagead/show_ads.js";
         if (!document._write) document._write = document.write;
         document.write = function (str) {
-            placesrc.innerHTML += str;
+            document.getElementsByClassName("widget-ad")[0].innerHTML += str;
         };
-        placesrc.appendChild(script);
+        document.getElementsByClassName("widget-ad")[0].appendChild(script);
         setTimeout(function () {
             document.getElementById("wpstats").setAttribute('style', 'display:none;');
 
@@ -107,16 +107,16 @@ var show = Math.floor((Math.random() * 4) + 1);
     google_ad_height = 90;
     setTimeout(function () {
         var placesrc = document.getElementsByClassName("publiFin")[0];
-        placesrc.setAttribute("style", "height:90px;width:728px");
-        placesrc.innerHTML = "";
+        document.getElementsByClassName("publiFin")[0].setAttribute("style", "height:90px;width:728px");
+        document.getElementsByClassName("publiFin")[0].innerHTML = "";
         var script = document.createElement("script");
         script.type = "text/javascript";
         script.src = "//pagead2.googlesyndication.com/pagead/show_ads.js";
         if (!document._write) document._write = document.write;
         document.write = function (str) {
-            placesrc.innerHTML += str;
+            document.getElementsByClassName("publiFin")[0].innerHTML += str;
         };
-        placesrc.appendChild(script);
+        document.getElementsByClassName("publiFin")[0].appendChild(script);
         setTimeout(function () {
             document.getElementById("wpstats").setAttribute('style', 'display:none;');
 
