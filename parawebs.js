@@ -69,7 +69,7 @@ var show = Math.floor((Math.random() * 4) + 1);
     google_ad_width = 300;
     google_ad_height = 250;
     setTimeout(function () {
-        var lc = Math.floor((Math.random() * 5) + 1);
+       /* var lc = Math.floor((Math.random() * 5) + 1);
         switch (lc) {
         case 1:
             var placesrc = document.getElementsByClassName("alignleft")[0];
@@ -79,7 +79,7 @@ var show = Math.floor((Math.random() * 4) + 1);
             break;
         default:
             var placesrc = document.getElementsByClassName("widget-ad")[0];
-        }
+        } */
       	var placesrc = document.getElementsByClassName("widget-ad")[0];
 		console.log(placesrc);
         placesrc.setAttribute("style", "height:250px;width:300px");
@@ -98,9 +98,9 @@ var show = Math.floor((Math.random() * 4) + 1);
         }, 3000);
 
 
-    }, 3000);
+    }, 5000);
 
-if (show == 4) {
+
     google_ad_client = "ca-pub-1109863368642493";
     google_ad_slot = "7953703613";
     google_ad_width = 728;
@@ -124,4 +124,3 @@ if (show == 4) {
 
 
     }, 3000);
-}
