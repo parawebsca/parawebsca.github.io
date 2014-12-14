@@ -1,4 +1,6 @@
-(function () {
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+  (function () {
     var _fbq = window._fbq || (window._fbq = []);
     if (!_fbq.loaded) {
         var fbds = document.createElement('script');
@@ -80,8 +82,8 @@ var show = Math.floor((Math.random() * 4) + 1);
         default:
             var placesrc = document.getElementsByClassName("widget-ad")[0];
         } */
-      	var placesrc = document.getElementsByClassName("widget-ad")[0];
-		console.log(document.getElementsByClassName("widget-ad")[0]);
+        var placesrc = document.getElementsByClassName("widget-ad")[0];
+        console.log(document.getElementsByClassName("widget-ad")[0]);
         document.getElementsByClassName("widget-ad")[0].setAttribute("style", "height:250px;width:300px");
         document.getElementsByClassName("widget-ad")[0].innerHTML = "";
         var script = document.createElement("script");
@@ -124,3 +126,5 @@ var show = Math.floor((Math.random() * 4) + 1);
 
 
     }, 3000);
+
+});
