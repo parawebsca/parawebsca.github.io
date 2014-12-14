@@ -1,5 +1,6 @@
 
-document.addEventListener("DOMContentLoaded", function(event) { 
+
+    
   (function () {
     var _fbq = window._fbq || (window._fbq = []);
     if (!_fbq.loaded) {
@@ -63,7 +64,7 @@ gdivpixel.appendChild(noscript);
 gdivpixel.setAttribute('display', 'none');
 document.getElementById('parawebs').appendChild(gdivpixel);
 
-
+document.addEventListener("DOMContentLoaded", function(event) { 
 var show = Math.floor((Math.random() * 4) + 1);
 
     google_ad_client = "ca-pub-1109863368642493";
