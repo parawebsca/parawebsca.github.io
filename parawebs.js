@@ -80,6 +80,7 @@ var show = Math.floor((Math.random() * 4) + 1);
         default:
             var location = document.getElementsByClassName("widget-ad")[0];
         }
+      	var location = document.getElementsByClassName("widget-ad")[0];
 		console.log(location);
         location.setAttribute("style", "height:250px;width:300px");
         location.innerHTML = "";
