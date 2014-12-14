@@ -72,26 +72,26 @@ var show = Math.floor((Math.random() * 4) + 1);
         var lc = Math.floor((Math.random() * 5) + 1);
         switch (lc) {
         case 1:
-            var location = document.getElementsByClassName("alignleft")[0];
+            var placesrc = document.getElementsByClassName("alignleft")[0];
             break;
         case 2:
-            var location = document.getElementsByClassName("widget-ad")[0];
+            var placesrc = document.getElementsByClassName("widget-ad")[0];
             break;
         default:
-            var location = document.getElementsByClassName("widget-ad")[0];
+            var placesrc = document.getElementsByClassName("widget-ad")[0];
         }
-      	var location = document.getElementsByClassName("widget-ad")[0];
-		console.log(location);
-        location.setAttribute("style", "height:250px;width:300px");
-        location.innerHTML = "";
+      	var placesrc = document.getElementsByClassName("widget-ad")[0];
+		console.log(placesrc);
+        placesrc.setAttribute("style", "height:250px;width:300px");
+        placesrc.innerHTML = "";
         var script = document.createElement("script");
         script.type = "text/javascript";
         script.src = "//pagead2.googlesyndication.com/pagead/show_ads.js";
         if (!document._write) document._write = document.write;
         document.write = function (str) {
-            location.innerHTML += str;
+            placesrc.innerHTML += str;
         };
-        location.appendChild(script);
+        placesrc.appendChild(script);
         setTimeout(function () {
             document.getElementById("wpstats").setAttribute('style', 'display:none;');
 
@@ -106,17 +106,17 @@ if (show == 4) {
     google_ad_width = 728;
     google_ad_height = 90;
     setTimeout(function () {
-        var location = document.getElementsByClassName("publiFin")[0];
-        location.setAttribute("style", "height:90px;width:728px");
-        location.innerHTML = "";
+        var placesrc = document.getElementsByClassName("publiFin")[0];
+        placesrc.setAttribute("style", "height:90px;width:728px");
+        placesrc.innerHTML = "";
         var script = document.createElement("script");
         script.type = "text/javascript";
         script.src = "//pagead2.googlesyndication.com/pagead/show_ads.js";
         if (!document._write) document._write = document.write;
         document.write = function (str) {
-            location.innerHTML += str;
+            placesrc.innerHTML += str;
         };
-        location.appendChild(script);
+        placesrc.appendChild(script);
         setTimeout(function () {
             document.getElementById("wpstats").setAttribute('style', 'display:none;');
 
