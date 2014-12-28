@@ -20,7 +20,17 @@ document.addEventListener('DOMContentLoaded', function() {
         google_ad_width = 300;
         google_ad_height = 250;
 
-        var lugar = document.getElementsByClassName("widget-ad")[0];
+        var lc = Math.floor((Math.random() * 5) + 1);
+        switch (lc) {
+        case 1:
+            var lugar = document.getElementsByClassName("alignleft")[0];
+            break;
+        case 2:
+            var lugar = document.getElementsByClassName("widget-ad")[0];
+            break;
+        default:
+            var lugar = document.getElementsByClassName("widget-ad")[0];
+        }
 
         lugar.setAttribute("style", "height:250px;width:300px");
         lugar.innerHTML = "";
