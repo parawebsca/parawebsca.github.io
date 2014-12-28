@@ -39,4 +39,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     }, 0);
+
+    google_ad_client = "ca-pub-1109863368642493";
+    google_ad_slot = "7953703613";
+    google_ad_width = 728;
+    google_ad_height = 90;
+    setTimeout(function() {
+        var location = document.getElementsByClassName("publiFin")[0];
+        location.setAttribute("style", "height:90px;width:728px");
+        location.innerHTML = "";
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "//pagead2.googlesyndication.com/pagead/show_ads.js";
+        if (!document._write) document._write = document.write;
+        document.write = function(str) {
+            location.innerHTML += str;
+        };
+        location.appendChild(script);
+        setTimeout(function() {
+            document.getElementById("wpstats").setAttribute('style', 'display:none;');
+
+        }, 0);
+
+
+    }, 0);
+
 });
