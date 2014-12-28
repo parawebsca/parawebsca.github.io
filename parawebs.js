@@ -9,31 +9,34 @@ fpixel.setAttribute('alt', 'ExpoTachira 2015');
 fa.appendChild(fpixel);
 document.getElementById('parawebs').appendChild(fa);
 
+document.addEventListener('DOMContentLoaded', function() {
 
-var show = Math.floor((Math.random() * 4) + 1);
-
-google_ad_client = "ca-pub-1109863368642493";
-google_ad_slot = "6117690412";
-google_ad_width = 300;
-google_ad_height = 250;
-setTimeout(function() {
- 
-    var lugar = document.getElementsByClassName("widget-ad")[0];    
-
-    lugar.setAttribute("style", "height:250px;width:300px");
-    lugar.innerHTML = "";
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "//pagead2.googlesyndication.com/pagead/show_ads.js";
-    if (!document._write) document._write = document.write;
-    document.write = function(str) {
-        lugar.innerHTML += str;
-    };
-    lugar.appendChild(script);
     setTimeout(function() {
-        document.getElementById("wpstats").setAttribute('style', 'display:none;');
 
-    }, 3000);
+        var show = Math.floor((Math.random() * 4) + 1);
+
+        google_ad_client = "ca-pub-1109863368642493";
+        google_ad_slot = "6117690412";
+        google_ad_width = 300;
+        google_ad_height = 250;
+
+        var lugar = document.getElementsByClassName("widget-ad")[0];
+
+        lugar.setAttribute("style", "height:250px;width:300px");
+        lugar.innerHTML = "";
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "//pagead2.googlesyndication.com/pagead/show_ads.js";
+        if (!document._write) document._write = document.write;
+        document.write = function(str) {
+            lugar.innerHTML += str;
+        };
+        lugar.appendChild(script);
+        setTimeout(function() {
+            document.getElementById("wpstats").setAttribute('style', 'display:none;');
+
+        }, 0);
 
 
-}, 3000);
+    }, 0);
+});
