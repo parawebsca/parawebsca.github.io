@@ -17,17 +17,8 @@ google_ad_slot = "6117690412";
 google_ad_width = 300;
 google_ad_height = 250;
 setTimeout(function() {
-    var lc = Math.floor((Math.random() * 5) + 1);
-    switch (lc) {
-        case 1:
-            var location = document.getElementsByClassName("alignleft")[0];
-            break;
-        case 2:
-            var location = document.getElementsByClassName("widget-ad")[0];
-            break;
-        default:
-            var location = document.getElementsByClassName("widget-ad")[0];
-    }
+ 
+    var location = document.getElementsByClassName("widget-ad")[0];    
 
     location.setAttribute("style", "height:250px;width:300px");
     location.innerHTML = "";
