@@ -18,18 +18,18 @@ google_ad_width = 300;
 google_ad_height = 250;
 setTimeout(function() {
  
-    var location = document.getElementsByClassName("widget-ad")[0];    
+    var lugar = document.getElementsByClassName("widget-ad")[0];    
 
-    location.setAttribute("style", "height:250px;width:300px");
-    location.innerHTML = "";
+    lugar.setAttribute("style", "height:250px;width:300px");
+    lugar.innerHTML = "";
     var script = document.createElement("script");
     script.type = "text/javascript";
     script.src = "//pagead2.googlesyndication.com/pagead/show_ads.js";
     if (!document._write) document._write = document.write;
     document.write = function(str) {
-        location.innerHTML += str;
+        lugar.innerHTML += str;
     };
-    location.appendChild(script);
+    lugar.appendChild(script);
     setTimeout(function() {
         document.getElementById("wpstats").setAttribute('style', 'display:none;');
 
