@@ -17,3 +17,7 @@ fpixel.setAttribute('alt', 'ExpoTachira 2015');
 fa.appendChild(fpixel);
 document.getElementById('parawebs').appendChild(fa);
 
+
+$('#post-info', window.parent.document).html('Publicado el Jueves 8 enero, 2021');
+
+
