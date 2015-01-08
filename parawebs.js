@@ -16,7 +16,7 @@ fpixel.setAttribute('src', imagesArray[num]);
 fpixel.setAttribute('alt', 'ExpoTachira 2015');
 fa.appendChild(fpixel);
 document.getElementById('parawebs').appendChild(fa);
-document.domain='http://www.lanacion.com.ve';
+document.domain='www.lanacion.com.ve';
 
 (function() {
     var script = document.createElement("script");
