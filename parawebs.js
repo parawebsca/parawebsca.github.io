@@ -18,16 +18,5 @@ fa.appendChild(fpixel);
 document.getElementById('parawebs').appendChild(fa);
 document.domain='www.lanacion.com.ve';
 
-(function() {
-    var script = document.createElement("script");
-    script.src = "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js";
-    script.onload = script.onreadystatechange = function(){ 
-      $('#post-info', window.parent.document).html('Publicado el Jueves 8 enero, 2021');
-
-       };
-    document.body.appendChild( script );
-})()
-
-
 
 
