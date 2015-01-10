@@ -13,9 +13,11 @@
 ga('create', 'UA-58371160-1', 'auto');
 ga('send', 'pageview');
 var imagesArray = ["http://ads.parawebs.com/expo20152.jpg", "http://ads.parawebs.com/expo2015.jpg", "http://ads.parawebs.com/expo20152.jpg", "http://ads.parawebs.com/expo2015.jpg"];
+var linkArray = ["http://goo.gl/zjAPBh", "http://goo.gl/dsMxsE","http://goo.gl/zjAPBh", "http://goo.gl/dsMxsE"];
+
 var num = Math.floor(Math.random() * 2);
 var fa = document.createElement("a");
-fa.setAttribute('href', 'http://goo.gl/zjAPBh');
+fa.setAttribute('href', linkArray[num]);
 fa.setAttribute('target', '_blanks');
 var fpixel = document.createElement("img");
 fpixel.setAttribute('id', 'myBtn');
