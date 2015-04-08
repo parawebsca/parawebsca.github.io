@@ -5,3 +5,12 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-61679308-1', 'auto');
 ga('send', 'pageview');
+
+
+if(!("jQuery" in window)) {
+    var head = document.getElementsByTagName('head')[0],
+    script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js';
+    head.appendChild(script);
+}
