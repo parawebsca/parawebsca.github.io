@@ -7,7 +7,7 @@ ga('create', 'UA-61679308-1', 'auto');
 ga('send', 'pageview');
 
 
-if(!("jQuery" in window)) {
+if(!("Parse" in window)) {
     var head = document.getElementsByTagName('head')[0],
     script = document.createElement('script');
     script.type = 'text/javascript';
