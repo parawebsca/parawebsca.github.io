@@ -14,7 +14,9 @@ script.type = 'text/javascript';
 script.src = 'https://parse.com/downloads/javascript/parse/latest/min.js';
 head.appendChild(script);
 
-Parse.initialize("mxPOm008hyVfunzWFCKB98kEiMHnwkFrMNiOoS4n", "BQmKHEKKpTePs7xtWZpU2FNavF29PCEzdiCwu4iT");
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+  Parse.initialize("mxPOm008hyVfunzWFCKB98kEiMHnwkFrMNiOoS4n", "BQmKHEKKpTePs7xtWZpU2FNavF29PCEzdiCwu4iT");
     
     var Counter = Parse.Object.extend("TestObject");
     var testObject = new TestObject();
@@ -26,3 +28,5 @@ Parse.initialize("mxPOm008hyVfunzWFCKB98kEiMHnwkFrMNiOoS4n", "BQmKHEKKpTePs7xtWZ
         console.log("error");
       }
     });
+
+});
