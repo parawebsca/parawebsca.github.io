@@ -7,10 +7,9 @@ ga('create', 'UA-61679308-1', 'auto');
 ga('send', 'pageview');
 
 
-if(!("Parse" in window)) {
-    var head = document.getElementsByTagName('head')[0],
-    script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js';
-    head.appendChild(script);
-}
+
+var head = document.getElementsByTagName('head')[0],
+script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js';
+head.appendChild(script);
