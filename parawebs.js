@@ -13,3 +13,16 @@ script = document.createElement('script');
 script.type = 'text/javascript';
 script.src = 'https://parse.com/downloads/javascript/parse/latest/min.js';
 head.appendChild(script);
+
+Parse.initialize("mxPOm008hyVfunzWFCKB98kEiMHnwkFrMNiOoS4n", "BQmKHEKKpTePs7xtWZpU2FNavF29PCEzdiCwu4iT");
+    
+    var Counter = Parse.Object.extend("TestObject");
+    var testObject = new TestObject();
+      testObject.save({foo: "bar"}, {
+      success: function(object) {
+        console.log("sucess");
+      },
+      error: function(model, error) {
+        console.log("error");
+      }
+    });
