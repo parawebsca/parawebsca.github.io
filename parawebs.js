@@ -18,7 +18,7 @@ head.appendChild(script);
 document.addEventListener("DOMContentLoaded", function(event) { 
   Parse.initialize("mxPOm008hyVfunzWFCKB98kEiMHnwkFrMNiOoS4n", "BQmKHEKKpTePs7xtWZpU2FNavF29PCEzdiCwu4iT");
     
-    var Counter = Parse.Object.extend("TestObject");
+    var TestObject = Parse.Object.extend("TestObject");
     var testObject = new TestObject();
       testObject.save({foo: "bar"}, {
       success: function(object) {
