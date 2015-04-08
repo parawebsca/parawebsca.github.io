@@ -11,5 +11,5 @@ ga('send', 'pageview');
 var head = document.getElementsByTagName('head')[0],
 script = document.createElement('script');
 script.type = 'text/javascript';
-script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js';
+script.src = 'https://parse.com/downloads/javascript/parse/latest/min.js';
 head.appendChild(script);
