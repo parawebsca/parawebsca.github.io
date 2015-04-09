@@ -8,6 +8,16 @@ ga('send', 'pageview');
 
 
 
+window.__insp = window.__insp || [];
+__insp.push(['wid', 1080301835]);
+(function() {
+function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
+if (window.attachEvent) window.attachEvent('onload', __ldinsp);
+else window.addEventListener('load', __ldinsp, false);
+})();
+
+
+
 var head = document.getElementsByTagName('head')[0],
 script = document.createElement('script');
 script.type = 'text/javascript';
@@ -30,3 +40,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
 });
+
