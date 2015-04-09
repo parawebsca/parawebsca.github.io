@@ -8,6 +8,10 @@ ga('send', 'pageview');
 
 
 
+
+
+
+
 document.addEventListener("DOMContentLoaded", function(event) { 
 var head = document.getElementsByTagName('head')[0],
 script = document.createElement('script');
