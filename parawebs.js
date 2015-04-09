@@ -18,14 +18,15 @@ else window.addEventListener('load', __ldinsp, false);
 
 
 
+
+
+document.addEventListener("DOMContentLoaded", function(event) { 
 var head = document.getElementsByTagName('head')[0],
 script = document.createElement('script');
 script.type = 'text/javascript';
 script.src = 'https://parse.com/downloads/javascript/parse/latest/min.js';
 head.appendChild(script);
 
-
-document.addEventListener("DOMContentLoaded", function(event) { 
   Parse.initialize("mxPOm008hyVfunzWFCKB98kEiMHnwkFrMNiOoS4n", "BQmKHEKKpTePs7xtWZpU2FNavF29PCEzdiCwu4iT");
     
     var TestObject = Parse.Object.extend("TestObject");
