@@ -10,27 +10,22 @@ ga('send', 'pageview');
 
 
 
-
-
 document.addEventListener("DOMContentLoaded", function(event) { 
-var head = document.getElementsByTagName('head')[0],
-script = document.createElement('script');
-script.type = 'text/javascript';
-script.src = 'https://parse.com/downloads/javascript/parse/latest/min.js';
-head.appendChild(script);
-
-  Parse.initialize("mxPOm008hyVfunzWFCKB98kEiMHnwkFrMNiOoS4n", "BQmKHEKKpTePs7xtWZpU2FNavF29PCEzdiCwu4iT");
-    
-    var TestObject = Parse.Object.extend("TestObject");
-    var testObject = new TestObject();
-      testObject.save({foo: "bar"}, {
-      success: function(object) {
-        console.log("sucess");
-      },
-      error: function(model, error) {
-        console.log("error");
-      }
-    });
+    google_ad_client = "ca-pub-1109863368642493";
+    oogle_ad_slot = "1397388415";
+    google_ad_width = 300;
+    google_ad_height = 250;
+ var lugar  = document.getElementsByClassName("ads")[0];
+ lugar.setAttribute("style", "height:250px;width:300px");
+        lugar.innerHTML = "";
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "//pagead2.googlesyndication.com/pagead/show_ads.js";
+        if (!document._write) document._write = document.write;
+        document.write = function(str) {
+            lugar.innerHTML += str;
+        };
+        lugar.appendChild(script);
 
 });
 
