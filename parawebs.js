@@ -7,25 +7,24 @@ ga('create', 'UA-61679308-1', 'auto');
 ga('send', 'pageview');
 
 (function() {
- console.log("active");
+    console.log("active");
     google_ad_client = "ca-pub-1109863368642493";
     oogle_ad_slot = "1397388415";
     google_ad_width = 300;
     google_ad_height = 250;
- var lugar  = document.getElementsByClassName("ads")[0];
- lugar.setAttribute("style", "height:250px;width:300px");
-        lugar.innerHTML = "";
-        var script = document.createElement("script");
-        script.type = "text/javascript";
-        script.src = "//pagead2.googlesyndication.com/pagead/show_ads.js";
-        if (!document._write) document._write = document.write;
-        document.write = function(str) {
-            lugar.innerHTML += str;
-        };
-        lugar.appendChild(script);
+    var lugar = document.getElementsByClassName("ads")[0];
+    lugar.setAttribute("style", "height:250px;width:300px");
+    lugar.innerHTML = "";
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "//pagead2.googlesyndication.com/pagead/show_ads.js";
+    if (!document._write) document._write = document.write;
+    document.write = function(str) {
+        lugar.innerHTML += str;
+    };
+    lugar.appendChild(script);
 
 })();
-
 
 
 
