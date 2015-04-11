@@ -10,6 +10,7 @@ ga('send', 'pageview');
 
 
 document.addEventListener("DOMContentLoaded", function(event) { 
+  console.log("active");
     google_ad_client = "ca-pub-1109863368642493";
     oogle_ad_slot = "1397388415";
     google_ad_width = 300;
