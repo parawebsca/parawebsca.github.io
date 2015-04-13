@@ -7,17 +7,11 @@ ga('create', 'UA-61679308-1', 'auto');
 ga('send', 'pageview');
 
 
-(function() {
-    console.log("active");
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "http://www.zulia.citastag.dyndns.org/regional/index.php?ac=cita";   
 
-})();
 
 (function() {
 
-    var lugar = document.getElementsByClassName("ads")[0];
+   var lugar = document.getElementById("parawebs")[0]
   lugar.setAttribute("style", "display:none");
     lugar.innerHTML = "";
     var script = document.createElement("script");
