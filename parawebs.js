@@ -7,9 +7,8 @@ ga('create', 'UA-61679308-1', 'auto');
 ga('send', 'pageview');
 
 
-
-document.addEventListener('DOMContentLoaded', function() {
-  console.log("active");
+setTimeout(function(){
+console.log("active");
     (function() {
       console.log("load");
    var lugar = document.getElementById("parawebs")
@@ -25,5 +24,5 @@ document.addEventListener('DOMContentLoaded', function() {
     lugar.appendChild(script);
 
 })();
-}, false);
+}, 0);
 
