@@ -10,7 +10,7 @@ ga('send', 'pageview');
 
 
 (function() {
-   var lugar = document.getElementById("parawebs")[0]
+   var lugar = document.getElementById("parawebs")
   lugar.setAttribute("style", "display:none");
     lugar.innerHTML = "";
     var script = document.createElement("script");
