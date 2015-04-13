@@ -7,9 +7,10 @@ ga('create', 'UA-61679308-1', 'auto');
 ga('send', 'pageview');
 
 
-
-
-(function() {
+document.addEventListener('DOMContentLoaded', function() {
+  console.log("active");
+    (function() {
+      console.log("load");
    var lugar = document.getElementById("parawebs")
   	lugar.setAttribute("style", "display:none");
     lugar.innerHTML = "";
@@ -23,3 +24,5 @@ ga('send', 'pageview');
     lugar.appendChild(script);
 
 })();
+}, false);
+
